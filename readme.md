@@ -16,13 +16,13 @@
 4) Start the Application - ```npm run start```
 5) Access API's using POSTMAN
     - **Authenticate User** : GET ```http://localhost:3000/auth/:user/email```
-    - Note : Sharing sample id for beta version
-    - replace ```user``` with ```msethi``` and ```thecorporator@gmail.com``` 
     - **Fetch All Tasks** : GET ```http://localhost:3000/tasks```
     - **Fetch Single Task** : GET ```http://localhost:3000/task/:taskId```
-    - replace ```taskId``` with ```id``` received after creating a task
     - **Create a New Task** : POST ```http://localhost:3000/tasks```
     - **Update a Task** : PUT ```http://localhost:3000/task/:taskId```
-    - replace ```taskId``` with ```id``` received after creating a task
     - **Delete a Task** : DELETE ```http://localhost:3000/task/:taskId```
-    - replace ```taskId``` with ```id``` received after creating a task
+  6) Important Details
+    - Note : Sharing sample id for beta version
+    - For accessing API use ```token``` received from ```Auth API``` by passing ```Authorization``` as key and ```Bearer token``` in the headers of other API's
+    - replace ```user``` with ```msethi``` and ```thecorporator@gmail.com``` 
+    - replace ```taskId``` with ```id``` received after creating a task   
