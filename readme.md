@@ -13,4 +13,11 @@
 3) Setup Environment Variables 
     - PORT : 3000 or any other port number
     - JWT_KEY : 'secret' or any other strong key
-4) Start the Application - npm run start
+4) Start the Application - ```npm run start```
+5) Access API's using POSTMAN
+    - Authenticate User : GET ```http://localhost:3000/auth/:user/email```
+    - Fetch All Tasks : GET ```http://localhost:3000/tasks```
+    - Fetch Single Task : GET ```http://localhost:3000/task/:taskId```
+    - Create a New Task : POST ```http://localhost:3000/tasks```
+    - Update a Task : PUT ```http://localhost:3000/tasks```
+    - Delete a Task : DELETE ```http://localhost:3000/tasks```
