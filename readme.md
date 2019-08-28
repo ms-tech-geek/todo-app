@@ -22,7 +22,6 @@
     - **Update a Task** : PUT ```http://localhost:3000/task/:taskId```
     - **Delete a Task** : DELETE ```http://localhost:3000/task/:taskId```
   6) Important Details
-    - Note : Sharing sample id for beta version
     - For accessing API use ```token``` received from ```Auth API``` by passing ```Authorization``` as key and ```Bearer token``` in the headers of other API's
     - replace ```user``` with ```msethi``` and ```thecorporator@gmail.com``` 
     - replace ```taskId``` with ```id``` received after creating a task   
