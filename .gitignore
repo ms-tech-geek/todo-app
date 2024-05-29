@@ -1,1 +1,5 @@
+# Nodemodules
 node_modules
+
+# Next.js
+.next/
