@@ -114,9 +114,10 @@
 
 body,
 html {
-  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -144,8 +145,6 @@ a:focus {
   box-shadow: none;
 }
 
-
-
 /* theming global Checkbox */
 .form-check-input:checked {
   background-color: rgba(var(--primary-rgb), 1);
@@ -155,7 +154,6 @@ a:focus {
 .form-check-input[type="checkbox"] {
   border-radius: 0.25em;
 }
-
 
 .form-check-input {
   width: 1.3rem;
@@ -381,8 +379,6 @@ header[data-theme="dark"] h2,
   vertical-align: middle;
 }
 
-
-
 /* Dark mode */
 [data-theme="dark"] .navbar > .container-fluid ul li a {
   color: var(--subtle-dark);
@@ -540,11 +536,11 @@ header[data-theme="dark"] h2,
 /* Footer */
 footer {
   background: linear-gradient(
-          135deg,
-          rgba(var(--primary-rgb), 0.7) -10%,
-          rgba(var(--secondary-rgb), 0.8) 180%
-  ),
-  url(images/header-bg.jpeg);
+      135deg,
+      rgba(var(--primary-rgb), 0.7) -10%,
+      rgba(var(--secondary-rgb), 0.8) 180%
+    ),
+    url(images/header-bg.jpeg);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -561,12 +557,11 @@ footer {
 footer[data-theme="dark"],
 [data-theme="dark"] footer {
   background: linear-gradient(
-          135deg,
-          rgba(var(--primary-rgb), 0.4) -20%,
-          rgba(var(--secondary-rgb), 0.5) 165%
+    135deg,
+    rgba(var(--primary-rgb), 0.4) -20%,
+    rgba(var(--secondary-rgb), 0.5) 165%
   );
 }
-
 
 footer .stats {
   display: flex;
