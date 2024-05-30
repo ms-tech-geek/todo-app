@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { useContext } from "react";
-import { ThemeContext } from "../../App";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 const Layout = ({ children }) => {
   const { darkTheme } = useContext(ThemeContext);
