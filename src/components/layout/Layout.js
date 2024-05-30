@@ -1,17 +1,17 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import { useContext } from "react";
+import { ThemeContext } from "../../App";
 
-const Layout = (props) => {
+const Layout = ({ children }) => {
+  const { darkTheme } = useContext(ThemeContext);
   return (
     <div
       className="container"
-      data-theme={props.darkTheme ? "dark" : "light"}
+      data-theme={darkTheme ? "dark" : "light"}
     >
-      <Header
-        toggleTheme={props.toggleTheme}
-        darkTheme={props.darkTheme}
-      />
-      {props.children}
+      <Header />
+      {children}
       <br />
       <Footer />
     </div>
