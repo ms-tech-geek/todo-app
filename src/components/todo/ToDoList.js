@@ -1,16 +1,15 @@
 import ToDo from "./ToDo";
 
 const filterByStatus = ({ todo, displayStatus }) => {
-  switch (displayStatus) {
-    case "all":
-      return true;
-    case "pending":
-      return !todo.completed;
-    case "completed":
-      return todo.completed;
-    default:
-      return false; // Optional, based on your use case
-  }
+  const statusFilters = {
+    all: () => true,
+    pending: (todo) => !todo.completed,
+    completed: (todo) => todo.completed,
+  };
+
+  return statusFilters[displayStatus]
+    ? statusFilters[displayStatus](todo)
+    : false;
 };
 
 const filterByImportance = ({ todo, important }) => {
