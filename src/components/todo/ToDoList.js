@@ -1,33 +1,28 @@
 import ToDo from "./ToDo";
 
 const filterByStatus = ({ todo, displayStatus }) => {
-  if (displayStatus === "all") {
-    return true;
-  } else if (displayStatus === "pending") {
-    return todo.completed === false;
-  } else if (displayStatus === "completed") {
-    return todo.completed === true;
-  } else {
-    return false;
+  switch (displayStatus) {
+    case "all":
+      return true;
+    case "pending":
+      return !todo.completed;
+    case "completed":
+      return todo.completed;
+    default:
+      return false; // Optional, based on your use case
   }
 };
 
 const filterByImportance = ({ todo, important }) => {
-  if (important === true) {
-    return todo.important === true;
-  } else {
-    return true;
-  }
+  return !important || todo.important;
 };
 
 const filterByText = ({ todo, searchText }) => {
-  if (searchText?.length > 0) {
-    return todo.todoText
-      .toLocaleLowerCase()
-      .includes(searchText.toLocaleLowerCase());
-  } else {
-    return true;
-  }
+  return searchText?.length > 0
+    ? todo.todoText
+        .toLocaleLowerCase()
+        .includes(searchText.toLocaleLowerCase())
+    : true;
 };
 
 const ToDoList = ({
